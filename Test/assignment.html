@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 짝수만 출력하기
+//         // 1부터 20까지의 숫자 중에서 짝수만 콘솔에 출력하는 코드를 작성하세요.
+
+//         // for(let i = 1; i <=20; i++){
+//         //              if (i % 2 === 0)
+//         //              console.log(i)
+//         //          }
+
+//         // 그럼 홀수는 어떻게 할래?
+
+//                 // for(let i = 1; i <=20; i++){
+//                 //     if (i % 2 !== 0)
+//                 //     console.log(i)
+//                 // }
+
+
+
+// // 합계 계산하기
+// // 배열 [5, 7, 8, 10, 12]의 모든 요소의 합을 계산하여 콘솔에 출력하세요.
+
+// // let array =  [5, 7, 8, 10, 12]
+// // let sum = 0
+// // for(let i = 0; i < 5; i++){
+// //     sum += array[i]
+// // }
+// //     console.log(sum)
+
+
+// // console.log('--------------------------------')
+
+
+// // 배열 역순 출력하기
+// // 주어진 배열 [ 'apple', 'banana', 'cherry' ]를 역순으로 출력하세요. 배열의 순서를 변경하지 말고, 단순히 출력만 역순으로 하세요.
+
+// let array2 = [ 'apple', 'banana', 'cherry' ]
+// console.log(array2.slice().reverse()) // slice 와 reverse의 사용. 기존 배열은 건들지않고 배열을 수정가능하게한다.
+// console.log(array2)
+
+// console.log('--------------------------------')
+
+// 구구단 출력하기
+// 2단부터 9단까지의 구구단을 출력하는 코드를 작성하세요. 각 단은 "2 x 1 = 2"와 같은 형식으로 콘솔에 출력하세요.
+
+for(let i = 2; i <= 9; i++){
+    for(let j = 1; j <=9; j++){
+        console.log(`${i} x ${j} = ${i * j}`) // 백플립을 활용한 for 반복문
+    }
+    console.log('')
+}
+
+
+
+// 피보나치 수열 생성하기
+// 첫 번째 10개의 피보나치 수열 숫자를 생성하고 배열로 저장한 후, 이 배열을 콘솔에 출력하세요. 
+// 피보나치 수열에서 각 숫자는 앞의 두 숫자의 합으로 구성됩니다.
+
+function fibonacci(x){
+    let A = [0 , 1];
+    if(x === 1) return [0];
+    if(x === 2) return A;
+        for(i = 2; i < x; i++){
+            A[i] = A[i - 1] + A[i - 2];
+        }
+        return A;
+}
+console.log(fibonacci(10)) 
+// 함수 function 을 정의하고, 피보나치 수열을 이해해야됨; 첫번째 항과 두번째 항에 대해서 if 조건문을 걸어서 고정시켜줌.
+// 이후의  for 반복문은 피보나치 수열의 함수인데, 결국 앞에서 선언 A 배열의 길이를 늘리는 방식으로 X개의 피보나치 수열숫자를 생성.
+
+
+// 배열의 요소 필터링하기
+// 배열 [3, 45, 6, 12, 14]에서 10보다 큰 숫자만 새 배열에 저장하고, 이 새 배열을 콘솔에 출력하세요.
+
+    let A = [3, 45, 6, 12, 14]
+    console.log(A.filter((x) => x > 10))
+    
+    // filter(x) 로 조건설정해서 그값만 필터링할 수있게 해줌.
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Pyramid</title>
+</head>
+<body>
+    <script>
+        let pyramid = '';
+        let height = 5; // 피라미드의 높이
+
+        for (let i = 1; i <= height; i++) {
+            // 공백을 추가하여 별들이 가운데 정렬되도록 함
+            let spaces = ' '.repeat(height - i);
+            let stars = '*'.repeat(2 * i - 1);
+            pyramid += spaces + stars + '<br>'; // 각 줄을 HTML의 줄바꿈 태그 <br>로 구분
+        }
+
+        document.body.innerHTML = pyramid; // HTML 본문에 피라미드 출력
+    </script>
+</body>
+</html>
+    
+</body>
+</html>

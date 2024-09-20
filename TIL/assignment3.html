@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 배열 역순 출력하기
+        // 주어진 배열 [ 'apple', 'banana', 'cherry' ]를 역순으로 출력하세요. 
+        // 배열의 순서를 변경하지 말고, 단순히 출력만 역순으로 하세요.
+
+        let array =  ['apple','banana', 'cherry' ]
+        //console.log(array.reverse()) << //이걸쓰면 배열의 순서를 바꾸네
+
+        // concat()  그리고  slice() << 배열을 바꾸지 않으면서 문자열 추가 & 삭제가능
+        // slice(0, 3) 원래 배열을 변경하지않고 복사해온다. 범위지정도 가능하고 0번부터 마지막 n번째 전까지 라고 생각하면 편함, 
+        2번까지 복사해서 반환하겠다는뜻.
+        console.log(array.slice(0, 3).reverse()); // console.log(array.slice().reverse()); 이거랑도 같음. 범위지정도 알아두기
+        console.log(array)
+    </script>
+    
+</body>
+</html>

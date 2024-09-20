@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function add (a, b){
+            return a + b;
+        }
+
+        let result = add(5, 3);
+        console.log(result);
+
+        //      function 은 독립적으로 정의된 '코드블록' 이다. 객체나 메소드의 개념이 아니다.
+        //      함수 function add 에서 add 함수를 호출한다; parameters(매개변수) a 와 b를 통해;
+        //      function add 에서 add 역시 독립적인 함수이고 객체나 메소드가 아니다.
+        //      a 와 b는 add의 parameter(매개변수) 이고 값을 호출하는? 받는? 역할을 한다. 
+        //      5 와 3은 argument(인수) add 함수에 전달된 '인수' 이고 매개변수 a 와 b로 전달된다.
+        //      최종적으로 해석하자면 function 을 통해서 add 함수를 호출했고 매개변수 a 와 b를 구성해서
+        //      a + b 라는 값을 리턴 받겠다 라는 함수이다.
+        //      let result = add(5, 3) 에서는 5와 3이라는 argument(인수) 를 a 와 b라는 매개변수(parameters)에 넣겠다는뜻
+        //      console.log 를 통해서 result 값을 표현. console.log 는 console. 메소드인것이다.
+    
+        console.log('---------------------------------------------')
+
+        //      그럼 여기서 함수 function 과 메소드의 구분을 좀 더 명확하게 하는 연습을 하자.
+            
+        const calculator = {
+            add: function(a, b){
+                return a + b;
+            },
+            age: 32
+        }
+        calculator.add(3 , 4)
+        calculator.age
+        console.log(calculator)
+        console.log(calculator.add(3,5))
+        
+        function draw(x){
+            for(i = 1; i <= 2 * x - 1; i++){
+                let star = ''
+                let limit = i  
+                if(i >= x + 1){
+                    limit =  x * 2 - i
+                }
+
+                for(j = 0; j < limit; j++){
+                    star = star + '*'
+                }
+                console.log(star)
+            }
+        }
+         draw(5)
+         
+            // 이 숫자들을 5를 기준으로 만들어라
+            // (4) (9-4) 그러쵸
+            // // 아 
+            // 그럼 10번아닌가요
+            // 
+        
+        
+        
+    
+        
+        
+        
+        
+        
+        // 라는 것이 있을때 구분을 하자면
+
+        // const 는 상수를 선언한 것이고, 변수의 값을 재할당하는것을 불가능하게 한다. ! 객체가 아님. 그냥 키워드임
+        // let 역시 변수를 선언한 것이고, 변수의 값을 할당한것이며 객체가 아니다. 데이터를 저장하는 컨테이너!
+
+        // 위의 코드에서 calculator 는 객체이며 add는 calculator 객체의 메소드 라고 할 수있다.
+    </script>
+    
+</body>
+</html>

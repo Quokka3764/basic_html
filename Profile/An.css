@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(216, 208, 208);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.profile {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    height: 1000px;
+}
+
+.profile-picture img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.name {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.job-title {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #777;
+}
+
+.introduction {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.contacts {
+    background-color: whitesmoke;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 5px;
+}
+.social-links a {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.social-links a:hover {
+    background-color: gray;
+}

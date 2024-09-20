@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stars</title>
+</head>
+<body>
+    <script>
+
+       let a = '';
+       
+       for(let i = 0; i < 6; i++){
+        for(let j = 0; j < 6; j++){
+            a += '*';
+        }    
+            a += '\n'; 
+    }
+       console.log(a);
+
+    // 이 부분에 대한 해석을 하자면
+    // 첫번째 for 에 포함된 for loop를 먼저 실행하고 그다음 최종 for문 (변수 i값을 활용하고 있는)
+    //  a += '\n' 을 실행해서 마무리되는 루프이다/
+
+    //  그래서 먼저 j 라는 변수를 for loop를 하면
+    //  j = 0 j <6 true
+    //  a = *
+    //  j = 1 j < 6 true
+    //  a = **
+    //  j = 2 j < 6 true
+    //  a = ***
+    //  j = 3 j <6 true
+    //  a = ****
+    //  j = 4 j <6 true
+    //  a = *****
+    //  j = 5 j < 6 true
+    //  a = ******
+    //  j = 6 j <  6 false
+    //  최종 a = ****** 
+     
+    //  한 줄을 만들어 내는 for문 이었고
+    //  그다음에  실행될 마지막 i변수를 사용한 for문으로 다시한번 루프를 실행하는데
+    //  이 for문에서 주문할 것은 
+    //  a += '\n';  이것이 될것이다.
+    //  즉 i 가 참이면 계속 인덴트를 실행하여 복사하게 되고,
+    //  최종적으로 6*6 square 가 완성이 된다.
+    // 지금 배운 for 문을 활용해서 형이 알려준 별찍기 연습에 사용할수 없을까...?
+    // 다만 걸림돌이 되는것은 console.log를 단한번만 사용해서 표현하라고 했기때문에 쉽지않아보인다.
+    // 그런데 아무리 생각해도 현재 배운 for 문으로는 *가 줄어드는 표현?을 하는게 어려워보인다. 뭔가를 더 알아야 할것같다.  
+        
+     
+    </script>
+</body>
+</html>

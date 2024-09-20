@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         // 피보나치 수열 생성하기
+        // 첫 번째 10개의 피보나치 수열 숫자를 생성하고 배열로 저장한 후, 이 배열을 콘솔에 출력하세요. 
+        // 피보나치 수열에서 각 숫자는 앞의 두 숫자의 합으로 구성됩니다.
+
+        function something(n){
+            let A =[3, 4]
+            if(A === 1) return[3];
+            if(A === 2) return[3, 4];
+
+            for(let i = 2; i < n; i++){
+                A[i] = A[i - 1] + A[i - 2];
+            }
+            return A;
+        }
+        console.log(something(10))
+
+        // 1. 큰틀에서 새로운 function을 만들껀데, 이 function은 피보나치 배열을 가진다.
+        // 2. 피보나치는 첫번째항과 두번째항은 고정적으로 주어지고 그 두 숫자를 바탕으로 더해가면서 배열이 늘어간다
+        // 3. 배열 A를 선언하고, 첫번째 항과 두번쨰
+            
+
+        
+
+
+    </script>
+    
+</body>
+</html>
